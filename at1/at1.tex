@@ -1,0 +1,302 @@
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}    
+\usepackage[T1]{fontenc}  
+\usepackage{amsmath}   
+\usepackage{bm}  
+\usepackage{amssymb}
+
+\title{AT1 - Métodos Matemáticos para Gestão da Informação}
+\date{}
+\author{Juliane Pires}
+\begin{document}
+
+\maketitle
+
+% Questão 1
+\subsubsection*{1. Dado A = (8, -3, 2) e B = (-1, 4, 5), calcule: a) A + B, b) A - B, c) 2A - 3B.}
+\subparagraph{a) A + B =}(8, -3, 2) + (-1, 4, 5) = (7, 1, 7);
+\subparagraph{b) A - B =}(8, -3, 2) - (-1, 4, 5) = (9, -7, -3);
+\subparagraph{c) 2A - 3B =}$2\times(8, -3, 2)$ - $3\times(-1, 4, 5)$ = (16, -6, 4) - (-3, 12, 15) = (19, -18, -11)
+
+
+% Questão 2
+\subsubsection*{2. Considere V = (12, -7, 9). Em um cenário fictício, suponha que as três componentes representem,
+respectivamente, número de acessos, número de avisos e número de falhas em um sistema ao
+longo de um dia. Interprete o vetor V nesse contexto}
+Neste cenário fictício, é possível interpretar esse vetor como um sistema que teve um grande número de acessos (12), mas, em contrapartida, teve, também, um grande número de falhas, que resultaram em 9 - ou seja, 75\% em relação ao número de acessos. Isso pode indicar que o sistema precisa de manutenção.
+Já em relação ao número de avisos, que resultou em um número negativo, é possível sugerir uma análise desse número como um total de 7 avisos ou chamados removidos ou não atendidos.
+% Questão 3
+\subsubsection*{3. Calcule a norma (comprimento) dos seguintes vetores:}
+\subparagraph{a) ||V|| (9, 4) =} $\sqrt{9^2+4^2} = \sqrt{81 + 16} = \sqrt{97} \approx 9,848$
+\subparagraph{b) ||V|| (-6, 8) =} $\sqrt{(-6)^2+8^2} = \sqrt{36 + 64} = \sqrt{100} = 10$
+\subparagraph{c) ||V|| (2, -3) =} $\sqrt{2^2+(-3)^2} = \sqrt{4 + 9} = \sqrt{13} \approx 3,605$
+
+% Questão 4
+\subsubsection*{4. Normalize cada vetor do item 3, obtendo um vetor unitário (norma igual a 1), apresentando as
+coordenadas com três casas decimais.}
+\subparagraph{a) $\frac{ \vec{v} }{ ||\vec{v}|| } = \frac{9}{9,848} ; \frac{4}{9,848} = (0,913 ; 0,406)$}
+\subparagraph{b) $\frac{ \vec{v} }{ ||\vec{v}|| } = \frac{-6}{10} ; \frac{8}{10} = (-0,600 ; 0,800)$}
+\subparagraph{c) $\frac{ \vec{v} }{ ||\vec{v}|| } = \frac{2}{3,605} ; \frac{-3}{3,605} = (0,554 ; -0,832)$}
+
+% Questão 5
+\subsubsection*{5. 0 vetor W = (15, 0) aponta totalmente para o eixo X. Construa um vetor Z diferente de W, mas
+que tenha a mesma direção de W (ou seja, que seja um múltiplo escalar de W).}
+Para Z ser diferente de W, mas que fique na mesma direção desse vetor, é preciso que $k$ em Z = $k \times W$ seja um número real diferente de zero.\\  
+$\bullet$ O $y$ de W é zero, logo, um vetor com a forma $(x, 0)$ irá satisfazer a condição de múltiplo escalar de W. Exemplo:\\
+$\rightarrow$ Se $k$ = 3
+\subparagraph{Z = $k \times W \rightarrow Z = 3 \times (15 , 0) \rightarrow Z = (45, 0)$}  
+ ou\\
+$\rightarrow$ Se $k$ = 8
+\subparagraph{Z = $k \times W \rightarrow Z = 3=8 \times (15 , 0) \rightarrow Z = (120, 0)$}
+
+% Questão 6
+\subsubsection*{6. Crie um exemplo numérico de dois vetores P e Q em $R^2$ ou $R^3$ tais que ||P|| = ||Q|| (mesma
+norma), mas P e Q não sejam múltiplos escalares (ou seja, não apontem para a mesma direção)}
+Exemplo: $P(12, 6)\ e\ k = 1\ /\ Q(-12, 6)\ e\ k = -1$\\\\
+{\fbox{Norma:}}\\\\
+$P (12, 6) = \sqrt{12^2 + 6^2} = \sqrt{144 + 36} = \sqrt{180} = 13,416$\\
+$Q(-12, 6) = \sqrt{(-12)^2 + 6^2} = \sqrt{144 + 36} = \sqrt{180} = 13,416$
+
+% Questão 7
+\subsubsection*{7. Seja X = (10, 6) a posição de um ponto em um plano. Calcule a distância de X até Y = (7, 2) e de X
+até Z = (3, 15).}
+$\underset{x , y}{D} = x - y = (10, 6) - (7, 2) = (3, 4)$\\
+$\underset{x , y}{Norma} = ||v|| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = \bm{5}$\\\\
+
+$\underset{x , z}{D} = x - z = (10, 6) - (3, 15) = (7, -9)$\\
+$\underset{x , z}{Norma} = ||v|| = \sqrt{7^2 + (-9)^2} = \sqrt{49 + 81} = \sqrt{130} = \bm{11,401}$\\
+
+
+% Questão 8
+\subsubsection*{8. Construa um ponto T de modo que a distância de T até X = (10, 6) seja maior do que as distâncias
+calculadas no item anterior para Y e Z. Mostre o cálculo da distância entre T e X.}
+$\underset{x , y}{D} = \bm{5}$\\
+$\underset{x , z}{D} = \bm{11,401}$\\
+Para $\underset{x , T}{D} > 11,401 =$ ?\\\\
+
+Escolha:  $T(20, 30)$\\
+$\underset{x , T}{D} = x - T = (10, 6) - (20, 30) = (-10, -24)$\\
+$\underset{x , T}{Norma} = ||v|| = \sqrt{(-10)^2 + (-24)^2} = \sqrt{100 + 576} = \sqrt{676} = \bm{26}$\\
+26 > 11,401, logo, T > Y e Z é válido.
+
+% Questão 9
+\subsubsection*{9. Em um plano que representa Temperatura (X) e Umidade (Y), considere os pontos A = (30, 40),
+B = (32, 37) e C = (18, 80). Calcule as distâncias entre A e B, e entre A e C, e indique qual dos dois
+pontos B ou C representa uma condição climática mais próxima de A.}
+$\underset{A , B}{D} = (30, 40) - (32, 37) = (-2, 3)$\\
+$\underset{A , B}{Norma} = ||v|| = \sqrt{(-2)^2 + 3^2} = \sqrt{4 + 9} = \sqrt{13} = 3,605$\\\\
+
+$\underset{A , C}{D} = (30, 40) - (18, 80) = (12, -40)$\\
+$\underset{A , C}{Norma} = ||v|| = \sqrt{12^2 + (-40)^2} = \sqrt{144 + 1600} = \sqrt{1744} = 41,761$\\
+$\rightarrow$ A condição climática mais próxima de A está no ponto \textbf{B}, pois é a condição que possui \underline{menor distância} em relação ao ponto A.
+
+% Questão 10
+\subsubsection*{10. Considere o vetor H = (50, 20), que representa o valor esperado de duas leituras de um sensor.
+Dê dois exemplos de vetores que possam ser considerados "aceitavelmente próximos" de H e um
+exemplo de vetor que seja claramente "fora do padrão", justificando a escolha a partir das
+distâncias.}
+Vetores próximos escolhidos $\rightarrow I(62, 24) ; J(66, 28)$\\
+Vetor fora do padrão escolhido $\rightarrow A(8, -6)$\\\\
+Justificativas por distância euclidiana:\\\\
+{\fbox{Próximos:}}\\
+$\underset{H , I}{D} = \sqrt{(62 - 50)^2 + (24 - 20)^2} = \sqrt{12^2 + 4^2} = \sqrt{160} = \bm{12,649}$\\
+$\underset{H , J}{D} = \sqrt{(66 - 50)^2 + (28 - 20)^2} = \sqrt{16^2 + 8^2} = \sqrt{320} = \bm{17,888}$\\\\
+
+{\fbox{Fora do padrão:}}\\
+$\underset{H , A}{D} = \sqrt{(8 - 50)^2 + ((-6) - 20)^2} = \sqrt{(-42)^2 + (-26)^2} = \sqrt{2440} = \bm{49,396}$\\
+
+$\bullet$ É possível observar, portanto, que as distâncias de $H \rightarrow I (12,649)$ e $H \rightarrow J (17,888)$ são próximas quando comparadas à distância $H \rightarrow A (49,395)$. 
+
+% Questão 11
+\subsubsection*{11. Construa um vetor J tal que a distância entre J e H = (50, 20) seja exatamente igual a 10
+unidades. Apresente J e mostre o cálculo da distância.}
+$\underset{H , J}{D} = 10 \rightarrow D = \sqrt{(x - 50)^2 + (y - 20)^2} = 10$\\
+$\underset{H , J}{D} = (\sqrt{(x - 50)^2 + (y - 20)^2})^2 = (10)^2$ $\rightarrow (x - 50)^2 + (y - 20)^2 = 100$ \\
+$\bullet$ Escolha: manter a coordenada $x$ de $J = 50$, assim, substituindo-a na equação:\\
+$D = (x - 50)^2 + (y - 20)^2 = 100 \rightarrow (50 - 50)^2 + (y - 20)^2 = 100 \rightarrow$\\
+$(y - 20)^2 = 100 \rightarrow y - 20 = \sqrt{100} \therefore y - 20 = \pm 10$\\
+$\rightarrow$ Duas soluções:\\
+$y - 20 = 10 \rightarrow y = 30\\
+y - 20 = -10 \rightarrow y = 10$\\
+$\bullet$ Para obter 10 unidades de distância de $H(50, 20)$, posso escolher $J(50, 30)$ ou $J(50, 10)$. Justificativa:\\
+$\rightarrow$ Para $J(50, 30)$ e $H(50, 20)$:\\
+$\underset{H , J}{D} = \sqrt{(50 - 50)^2 + (30 - 20)^2} = \sqrt{0^2 + 10^2} = \sqrt{100} = 10\ \checkmark$\\\\
+$\bullet$ Para $J(50, 10)$ e $H(50, 20)$:\\
+$\underset{H , J}{D} = \sqrt{(50 - 50)^2 + (10 - 20)^2} = \sqrt{0^2 + (-10)^2} = \sqrt{100} = 10\ \checkmark$
+
+% Questão 12
+\subsubsection*{12.  Calcule a similaridade de cosseno entre os pares de vetores: a) (4, 4) e (8, 8); b) (4, 4) e (4,-4).
+Apresente os cálculos do produto escalar e das normas envolvidos.}
+$\bullet$ Para os vetores A e B:\\
+$\fbox{Norma dos vetores:}$\\
+$\fbox{A}$:\\
+$A1(4, 4) = ||V|| = \sqrt{4^2 + 4^2} = \sqrt{32} = 5,656$\\
+$A2(8,8) = ||V|| = \sqrt{8^2 + 8^2} = \sqrt{128} = 11,313$\\\\
+$\fbox{B}:$\\
+$B1(4, 4) = ||V|| = \sqrt{4^2 + 4^2} = \sqrt{32} = 5,656$\\
+$B2(4, -4) = ||V|| = \sqrt{4^2 + (-4)^2} = \sqrt{32} = 5,656$\\\\
+
+$\underset{A1,A2}{S} = \frac{A1 \times A2}{||A1|| \times ||A2||} = \frac{4 \times 8 + 4 \times 8}{5,656 \times 11,313} = \frac{64}{63,986} = \bm{1}$\\
+$\underset{B1,B2}{S} = \frac{B1 \times B2}{||B1|| \times ||B2||} = \frac{4 \times 4 + 4 \times -4}{5,656 \times 5,656} = \frac{0}{31,990} = \bm{0}$
+
+% Questão 13
+\subsubsection*{13. Dado o vetor Q = (6, 3) em um plano, calcule a similaridade de cosseno entre Q e os vetores U
+= (10, 5), V = (2,10) e W = (3, 1). Indique, com base nos valores encontrados, qual vetor está mais
+alinhado a Q.}
+$\framebox[30pt]{Q, U:}$\\\\
+$\underline{Normas:}$\\
+$Q = \sqrt{6^2 + 3^2} = \sqrt{36 + 9} = \sqrt{45} = 6,708$\\
+$U = \sqrt{10^2 + 5^2} = \sqrt{100 + 25} = \sqrt{125} = 11,180$\\
+
+$\underset{Q, U}{S} = \frac{Q \times U}{||Q|| \times ||U||} = \frac{6 \times 10 + 3 \times 5}{6,708 \times 11,180} = \frac{75}{74,995} = \bm{1}$\\\\
+
+$\framebox[30pt]{Q, V:}$\\\\
+$\underline{Normas:}$\\
+$Q = 6,708$\\
+$V = \sqrt{2^2 + 10^2} = \sqrt{4 + 100} = \sqrt{104} = 10,198$\\
+
+$\underset{Q, V}{S} = \frac{Q \times V}{||Q|| \times ||V||} = \frac{6 \times 2 + 3 \times 10}{6,708 \times 10,198} = \frac{42}{68,408} = \bm{0,613}$\\\\
+
+$\framebox[30pt]{Q, W:}$\\\\
+$\underline{Normas:}$\\
+$Q = 6,708$\\
+$W = \sqrt{3^2 + 1^2} = \sqrt{10} = 3,162$\\
+
+$\underset{Q, W}{S} = \frac{Q \times W}{||Q|| \times ||W||} = \frac{6 \times 3 + 3 \times 1}{6,708 \times 3,162} = \frac{21}{21,210} = \bm{0,990}$\\\\
+$\bullet$ O vetor mais alinhado a Q é o vetor U, pois está perfeitamente alinhado a Q (similaridade de cosseno = 1).
+
+% Questão 14
+\subsubsection*{14. Três estudantes têm seu tempo de estudo distribuído em duas áreas, representadas pelos
+vetores: E1 = (12, 3), E2 = (4, 1) e E3 = (5, 10), onde a primeira coordenada indica horas de estudo
+em "Área A" e a segunda coordenada horas em "Área B". Use a similaridade de cosseno para
+comparar E1 com E2 e E3, indicando qual estudante apresenta um padrão de estudo mais parecido
+com E1.}
+$\fbox{E1}\ \underline{Norma:} \sqrt{12^2 + 3^2} = \sqrt{144 + 9} = \sqrt{153} = 12,369$\\
+$\fbox{E2}\ \underline{Norma:} \sqrt{4^2 + 1^2} = \sqrt{17} = 4,123$\\
+$\fbox{E3}\ \underline{Norma:} \sqrt{5^2 + 10^2} = \sqrt{125} = 11,180$\\\\
+
+
+$\underset{E1, E2}{S} = \frac{E1 \times E2}{||E1|| \times ||E2||} = \frac{12 \times 4 + 3 \times 1}{12,369 \times 4,123} = \frac{51}{50,997} = \bm{1}$\\
+$\underset{E1, E3}{S} = \frac{E1 \times E3}{||E1|| \times ||E3||} = \frac{12 \times 5 + 3 \times 10}{12,369 \times 11,180} = \frac{90}{138,285} = \bm{0,650}$\\\\
+$\bullet$ O estudante $E2$ apresenta alinhamento perfeito do padrão de estudo com o estudante $E1$ (similaridade de cosseno = 1). Ambos $E1$ e $E2$ distribuem seu tempo de estudo na mesma proporção entre as áreas A e B (4:1); já $E3$ dedica mais tempo à área B na proporção 1:2, por isso é menos similar à distribuição do tempo de estudo de $E1$.
+
+
+
+% Questão 15
+\subsubsection*{15. Apresente um exemplo numérico em $R^2$ em que um vetor B esteja mais distante de Q do que
+um vetor C (ou seja, d(Q,B) > d(Q,C)), mas em que a similaridade de cosseno entre Q e B seja maior
+do que entre Q e C (ou seja, cos (Q,B) > cos(Q,C)). Mostre os cálculos.}
+
+$\underline{Escolha\ dos\ vetores:}\ B(20, 10)\ |\ C(5, -10)\ |\ Q(-20, 10)$\\\\
+$\fbox{Justificativa:}$\\
+$\underset{Q, B}{D} > \underset{Q, C}{D}:$\\
+$\underset{Q, B}{D} = \sqrt{(\underset{Q}{x} - \underset{B}{x})^2 + (\underset{Q}{y} - \underset{B}{y})^2} = \sqrt{((-20) - 20)^2 + (10 - 10)^2} = \sqrt{40^2 + 0^2} = \sqrt{1600} = 40$\\
+$\underset{Q, C}{D} = \sqrt{(\underset{Q}{x} - \underset{C}{x})^2 + (\underset{Q}{y} - \underset{C}{y})^2} = \sqrt{((-20) - 5)^2 + (10 - (-10))^2} = \sqrt{625 + 400} = \sqrt{1025} = 32,015$\\\\
+$\underset{Q, B}{D} > \underset{Q, C}{D} \checkmark$\\\\\\
+$\fbox{Justificativa para $\underset{Q, B}{cos}$ > $\underset{Q, C}{cos}$:}$\\\\
+$\underline{Normas:}$\\
+$Q = \sqrt{(-20)^2 + 10^2} = \sqrt{400 + 100} = \sqrt{500} = 22,360$\\
+$B = \sqrt{20^2 + 10^2} = \sqrt{500} = 22,360$\\
+$C = \sqrt{5^2 + (-10)^2} = \sqrt{25 + 100} = \sqrt{125} = 11,180$\\\\
+
+$\underset{Q, B}{S} = \frac{Q \times B}{||Q|| \times ||B||} = \frac{(-20 \times 20) + (10 \times -10)}{22,360 \times 22,360} = \frac{-400 + 100}{499,969} = -0,600$\\
+$\underset{Q, C}{S} = \frac{Q \times C}{||Q|| \times ||C||} = \frac{(-20 \times 5) + (10 \times -10)}{22,360 \times 11,180} = \frac{-100 - 100}{249,984} = -0,800$\\\\
+Logo, $\underset{Q, B}{cos}$ > $\underset{Q, C}{cos}$.
+
+
+
+% Questão 16
+\subsubsection*{16. Mostre, com um exemplo concreto, que a magnitude (norma) de um vetor não altera o valor da
+similaridade de cosseno. Para isso, escolha dois vetores paralelos, calcule as normas, o produto
+escalar e a similaridade de cosseno entre eles.}
+$\bullet$ Para que um vetor seja paralelo de outro, esses vetores precisam que seus múltiplos sejam escalares um do outro. Exemplo (e escolha de vetores):\\
+$k = 3\\
+A(12, 4) \times\ k \rightarrow B(36, 12)$\\
+
+$\underline{Normas:}$\\
+$||A|| = \sqrt{12^2 + 4^2} = \sqrt{160} = 12,649$\\
+$||B|| = \sqrt{36^2 + 12^2} = \sqrt{1296 + 144} = \sqrt{1440} = 37,947$\\\\
+
+$\underset{A, B}{S} = \frac{A \times B}{||A|| \times ||B||} = \frac{(12 \times 36) + (4 \times 12)}{12,649 \times 37,947} = \frac{480}{479,991} = \bm{1}$\\\\
+$\bullet$ Por mais que a magnitude do vetor $B$ seja maior, isso não afeta a similaridade exata de cosseno entre os vetores.
+
+% Questão 17
+\subsubsection*{17. Construa um vetor S em $R^2$ que forme um ângulo de 60° com o eixo X. Apresente um exemplo
+numérico coerente com esse ângulo, lembrando que cos (60°) = 1/2.}
+Para que um vetor $S = (X, Y)$ forme um ângulo de 60º com o eixo $x$, será utilizada a seguinte relação trigonométrica:\\
+$S = (||S|| \times \cos 60^\circ; ||S|| \times \sin 60^\circ)$, na qual ||S|| é relativo ao módulo do comprimento do vetor.\\
+
+$\rightarrow \cos 60^\circ = \frac{1}{2} = 0,500$\\
+$\rightarrow \sin 60^\circ = \frac{\sqrt{3}}{2} = 0,866$\\
+$\rightarrow$ Módulo escolhido > 0 = 6\\\\
+Atributo $x$ = $6 \times \cos 60^\circ = 6 \times 0,500 = 3$\\
+Atributo $y$ = $6 \times \sin 60^\circ = 6 \times 0,866\ (ou\ 6 \times \frac{\sqrt{3}}{2}) = 5,1\ (ou\ 3\sqrt{3})$\\\\
+$\therefore S (3; 5,1)$\\\\
+$\underline{Justificativa:}$ podemos garantir que o ângulo formado é de $60^\circ$ a partir do cálculo da tangente:\\
+$\tan 60^\circ = \frac{y}{x} = \frac{3\sqrt{3}}{3} = \sqrt{3} = \arctan(\sqrt{3}) = \bm{60^\circ}$
+
+% Questão 18
+\subsubsection*{18. (0 dilema dos ciclistas) Em um treinamento de ciclismo, consideram-se dois atributos para
+avaliar o estilo de cada atleta: Subida (X) e Velocidade em Trechos Planos (Y). Quatro ciclistas
+foram avaliados: Rafael (R) = (40, 5), Bruno (B) = (5, 30), Lucas (L) = (8, 2) e um novo atleta N = (20, 3), em que os números representam unidades de esforço em cada dimensão.}
+
+\subsubsection*{a) Calcule a distância Euclidiana entre N e cada um dos ciclistas Rafael, Bruno e Lucas.}
+$\underline{Norma:}$\\
+$N:\ \sqrt{20^2 + 3^2} = 20,223\\
+R: \sqrt{40^2 + 5^2} = 40,311\\
+B = \sqrt{5^2 + 30^2} = 30,413\\
+L = \sqrt{8^2 + 2^2} = 8,246$\\
+
+$\underset{N, R}{D} = \sqrt{(\underset{N}{x} - \underset{R}{x})^2 + (\underset{N}{y} - \underset{R}{y})^2} = \sqrt{(20 - 40)^2 + (3 - 5)^2} = \sqrt{404} = 20,099$\\
+$\underset{N, B}{D} = \sqrt{(\underset{N}{x} - \underset{B}{x})^2 + (\underset{N}{y} - \underset{B}{y})^2} = \sqrt{(20 - 5)^2 + (3 - 30)^2} = \sqrt{954} = 30,886$\\
+$\underset{N, L}{D} = \sqrt{(\underset{N}{x} - \underset{L}{x})^2 + (\underset{N}{y} - \underset{L}{y})^2} = \sqrt{(20 - 8)^2 + (3 - 2)^2} = \sqrt{145} = 12,041$ 
+
+\subsubsection*{b) Calcule a similaridade de cosseno entre N e cada um dos três ciclistas.}
+$\underset{N, R}{S} = \frac{N \times R}{||N|| \times ||R||} = \frac{(20 \times 40) + (3 \times 5)}{20,223 \times 40,311} = \frac{815}{815,209} = \bm{0,999}$\\
+$\underset{N, B}{S} = \frac{N \times B}{||N|| \times ||B||} = \frac{(20 \times 5) + (3 \times 30)}{20,223 \times 30,413} = \frac{190}{615,042} = \bm{0,308}$\\
+$\underset{N, L}{S} = \frac{N \times L}{||N|| \times ||L||} = \frac{(20 \times 8) + (3 \times 2)}{20,223 \times 8,246} = \frac{166}{166,841} = \bm{0,994}$\\
+
+\subsubsection*{c) Com base nos resultados, indique qual ciclista tem
+o estilo mais parecido com N.}
+De acordo com os cálculos, a maior similaridade de cosseno - ou seja, a maior proximidade entre estilos - está entre os ciclistas N e Rafael.
+
+% Questão 19
+\subsubsection*{19. (Escolhendo o chefe de turno) Em uma fábrica, deseja-se escolher um chefe de turno com perfil
+de trabalho semelhante a o de u m funcionário considerado modelo. Dois atributos são avaliados:
+Precisão (X) e Rapidez (Y). Os vetores dos funcionários são: F1 = (12, 9), F2 = (20, 2) e F3 = (6, 6).
+Suponha que F1 seja o funcionário modelo. Usando a similaridade de cosseno, determine qual dos
+funcionários F2 ou F3 apresenta um perfil mais alinhado ao de F1.}
+$\underline{Normas:}\\
+F1 = \sqrt{12^2 + 9^2} = 15\\
+F2 = \sqrt{20^2 + 2^2} = 20,099\\
+F3 = \sqrt{6^2 + 6^2} = 8,485$\\\\
+
+$\underset{F1, F2}{S} = \frac{F1 \times F2}{||F1|| \times ||F2||} = \frac{(12 \times 20) + (9 \times 2)}{15 \times 20,099} = \frac{258}{301,485} = \bm{0,855}$\\
+$\underset{F1, F3}{S} = \frac{F1 \times F3}{||F1|| \times ||F3||} = \frac{(12 \times 6) + (9 \times 6)}{15 \times 8,485} = \frac{126}{127,275} = \bm{0,989}$\\\\
+$\bullet$ Mesmo que $F3$ apresente números menores de precisão e rapidez comparados aos de $F1$, o equilíbrio entre esse fatores do funcionário $F1$ é o mais próximo do funcionário $F3$.
+
+% Questão 20
+\subsubsection*{20. (0 assistente virtual da biblioteca) Uma biblioteca classifica seus livros em um plano com dois
+eixos: Teoria (X) e Prática (Y). Três livros foram avaliados e receberam os vetores: L1 = (9, 1), L2 = (3,3) e L3 = (1, 9). Um leitor informa que deseja um livro que equilibre, o máximo possível, teoria
+e prática.}
+
+\subsubsection*{a) Proponha um vetor Q que represente esse interesse equilibrado.}
+Como o vetor $L1$ é muito mais teórico $(9, 1)$ e $L3$ é muito mais prático $(1, 9)$, é possível se basear em um vetor equilibrado como $L2 (3, 3)$ para escolhe o vetor $Q$. Aqui, foi escolhido o vetor $Q (1, 1)$.
+
+
+\subsubsection*{b) Calcule a similaridade de cosseno entre Q e cada um dos livros L1, L2 e L3.}
+$\underline{Normas:}\\
+Q (1, 1) = \sqrt{1^2 + 1^2} = \sqrt{2} = 1,414\\
+L1 (9, 1)= \sqrt{9^2 + 1^2} = \sqrt{82} = 9,055\\
+L2 (3, 3) = \sqrt{3^2 + 3^2} = \sqrt{18} = 4,242\\
+L3 (1, 9) = \sqrt{1^2 + 9^2} = \sqrt{82} = 9,055$\\\\
+
+$\underset{Q, L1}{S} = \frac{Q \times L1}{||Q|| \times ||L1||} = \frac{(1 \times 9) + (1 \times 1)}{1,414 \times 9,055} = \frac{10}{12,803} = \bm{0,781}$\\
+$\underset{Q, L2}{S} = \frac{Q \times L2}{||Q|| \times ||L2||} = \frac{(1 \times 3) + (1 \times 3)}{1,414 \times 4,242} = \frac{6}{5,998} = \bm{1}$\\
+$\underset{Q, L3}{S} = \frac{Q \times L3}{||Q|| \times ||L3||} = \frac{(1 \times 1) + (1 \times 9)}{1,414 \times 9,055} = \frac{10}{12,803} = \bm{0,781}$
+
+\subsubsection*{c) Indique qual livro deveria ser recomendado em primeiro lugar.}
+O livro que deveria ser recomendado em primeiro lugar é o $L2(3,3)$, pois a similaridade de cosseno desse vetor com o vetor $Q$ é igual a 1 (máxima). Isso mostra que ambos os interesses ampontam para a mesma direção no plano Teoria - Prática.
+
+\end{document}
