@@ -6,9 +6,11 @@ Todas as atividades foram resolvidas por Juliane Pires.
 ```
 sin169-tex
 │   README.md
-│
 └───AT1
 │   │   at1.pdf
 │   │   at1.tex
 └───AT2
+│   │   at2.pdf
+│   │   at2.tex
+└───AT3
 ```
